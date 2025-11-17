@@ -1,7 +1,6 @@
 // src/App.tsx
 import { Routes, Route } from "react-router-dom";
 
-import LandingPage from "./pages/Home";
 import LoginPage from "./pages/auth/login";
 import RegisterPage from "./pages/auth/register";
 import Product from "./pages/store/product";
@@ -15,13 +14,13 @@ export default function App() {
     <Routes>
       
       
-      <Route path="/" element={<LandingPage />} />
+      {/* <Route path="/" element={<LandingPage />} /> */}
       <Route path="/login" element={<LoginPage />} />
       <Route path="/register" element={<RegisterPage />} />
-      <Route path="/main" element={<Landing/>} />
+      <Route path="/" element={<Landing/>} />
 
        <Route path="/storeproducts" element={<Product />} />
-       <Route path ="/home" element={<LandingPage />} />
+       {/* <Route path ="/home" element={<LandingPage />} /> */}
     </Routes>
     </>
   );
